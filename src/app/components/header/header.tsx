@@ -7,7 +7,7 @@ export const Header = () =>{
         <nav className='w-full px-8 py-4 bg-white shadow text-black'> 
             <ul>
                 <div className='flex justify-between items-center'>
-                    <div className='flex items-center gap-2 font-semibold text-lg'>
+                    <div className='flex items-center gap-2 font-bold text-lg'>
                         <li style={{ display: 'flex', alignItems: 'center'}}>
                             <CiCalendar className='text-sky-500 text-2xl' style={{ marginRight: 8 }} />
                             <Link  href="/Agenda">PsiAgenda</Link>
