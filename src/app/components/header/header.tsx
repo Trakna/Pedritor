@@ -13,7 +13,7 @@ export const Header = () =>{
                             <Link  href="/Agenda">PsiAgenda</Link>
                         </li>
                     </div>
-                    <div className='flex item-center gap-4 font-medium text-base font-semibold'>
+                    <div className='flex item-center gap-4 font-medium text-sm font-semibold'>
                         <li>
                             <Link href="/Recursos" className='flex items-center gap-1'>Recursos</Link>
                         </li>
