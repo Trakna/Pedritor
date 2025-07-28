@@ -19,6 +19,10 @@
   }
 }
 
+a{
+  @apply hover:underline;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
