@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { CiCalendar } from "react-icons/ci";
 
+
 export const Header = () =>{
 //flex items-center justify-center bg-white py-4 text-black shadow
     return(
@@ -9,11 +10,11 @@ export const Header = () =>{
                 <div className='flex justify-between items-center'>
                     <div className='flex items-center gap-2 font-bold text-lg'>
                         <li style={{ display: 'flex', alignItems: 'center'}}>
-                            <CiCalendar className='text-sky-500 text-2xl' style={{ marginRight: 8 }} />
+                            <CiCalendar className='text-blue-600 text-2xl' style={{ marginRight: 8 }} />
                             <Link  href="/Agenda">PsiAgenda</Link>
                         </li>
                     </div>
-                    <div className='flex item-center gap-4 font-medium text-sm font-semibold'>
+                    <div className='flex item-center gap-4 font-medium text-sm font-base'>
                         <li>
                             <Link href="/Recursos" className='flex items-center gap-1'>Recursos</Link>
                         </li>
