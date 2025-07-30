@@ -1,16 +1,17 @@
 import Link from 'next/link';
-import { CiCalendar } from "react-icons/ci";
+import { FiCalendar } from "react-icons/fi";
+
 
 
 export const Header = () =>{
 //flex items-center justify-center bg-white py-4 text-black shadow
     return(
-        <nav className='w-full px-8 py-4 bg-white shadow text-black'> 
+        <nav className='w-full px-8 py-4 bg-[#f5f5f5] shadow text-black'> 
             <ul>
                 <div className='flex justify-between items-center'>
                     <div className='flex items-center gap-2 font-bold text-lg'>
                         <li style={{ display: 'flex', alignItems: 'center'}}>
-                            <CiCalendar className='text-blue-600 text-2xl' style={{ marginRight: 8 }} />
+                            <FiCalendar className='text-blue-600 text-2xl' style={{ marginRight: 8 }} />
                             <Link  href="/Agenda">PsiAgenda</Link>
                         </li>
                     </div>
