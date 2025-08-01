@@ -4,7 +4,6 @@ import { FiCalendar } from "react-icons/fi";
 
 
 export const Header = () =>{
-//flex items-center justify-center bg-white py-4 text-black shadow
     return(
         <nav className='w-full px-8 py-4 bg-[#f5f5f5] shadow text-black'> 
             <ul>

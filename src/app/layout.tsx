@@ -5,6 +5,7 @@ import { Header } from "./components/header/Header";
 import { Hero } from "./components/Hero/Hero";
 import { FeatureList } from "./components/FeatureList/FeatureList";
 import { Contatos } from "./components/Contatos/Contatos";
+import { Footer } from "./components/Footer/Footer";
 import "./globals.css";
 
 
@@ -37,6 +38,7 @@ export default function RootLayout({
         <Hero></Hero>
         <FeatureList></FeatureList>
         <Contatos></Contatos>
+        <Footer></Footer>
         {children}
       </body>
     </html>
