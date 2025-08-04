@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
-import { Header } from "./components/header/Header";
-import { Hero } from "./components/Hero/Hero";
-import { FeatureList } from "./components/FeatureList/FeatureList";
-import { Contatos } from "./components/Contatos/Contatos";
-import { Footer } from "./components/Footer/Footer";
+import { Header } from "./components/header/header";
+import { Hero } from "./components/hero/hero";
+import { FeatureList } from "./components/feature-list/feature-list";
+import { Contatos } from "./components/contacts/contacts";
+import { Footer } from "./components/footer/footer";
 import "./globals.css";
 
 

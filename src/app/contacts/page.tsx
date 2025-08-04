@@ -8,7 +8,7 @@ export default function Home() {
   const [enviado, setEnviado] = useState(false);
 
   const handleSubmit = async () => {
-    const res = await fetch('/api/contato', {
+    const res = await fetch('/api/contact', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ nome, email, mensagem }),

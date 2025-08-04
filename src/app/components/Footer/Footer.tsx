@@ -16,13 +16,13 @@ export const Footer = () => {
 
           <div className="flex items-center gap-4 font-medium text-sm font-base">
             <li>
-              <Link href="/Politica" className="flex items-center gap-1">Política de Privacidade</Link>
+              <Link href="/policy" className="flex items-center gap-1">Política de Privacidade</Link>
             </li>
             <li>
-              <Link href="/TermosUso" className="flex items-center gap-1">Termos de Uso</Link>
+              <Link href="/terms-of-use" className="flex items-center gap-1">Termos de Uso</Link>
             </li>
             <li>
-              <Link href="/Suporte" className="flex items-center gap-1">Suporte</Link>
+              <Link href="/support" className="flex items-center gap-1">Suporte</Link>
             </li>
           </div>
 
