@@ -10,7 +10,7 @@ export const Footer = () => {
           <div className="flex items-center gap-2 font-bold text-lg">
             <li style={{ display: 'flex', alignItems: 'center' }}>
               <FiCalendar className="text-blue-600 text-2xl" style={{ marginRight: 8 }} />
-              <Link href="/">PsiAgenda</Link>
+              <Link href="/agenda">PsiAgenda</Link>
             </li>
           </div>
 
