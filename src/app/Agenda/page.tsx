@@ -2,9 +2,11 @@
 export default function Agenda() {
   return (
     <>
-      <p>
+    <section>
+      <p className="text-center text-2xl font-bold text-black bg-white shadow">
         Está é a Agenda Inicial, teremos outras alterações aqui
       </p>
+    </section>
       </>
       );
 };
