@@ -1,4 +1,4 @@
-# Meu Projeto Next.js
+# Pedritor Next.js
 
 Este é um projeto **Next.js** criado com o comando `create-next-app` e utilizando a **Geist**, uma nova família tipográfica da **Vercel**.  
 O projeto foi estruturado para ser uma base sólida para uma landing page, com **componentes reutilizáveis** e **rotas dinâmicas**.
