@@ -1,35 +1,73 @@
-Este é um projeto Next.js criado com o comando create-next-app.
+# Meu Projeto Next.js
 
-Começando
-Primeiro, execute o servidor de desenvolvimento:
+Este é um projeto **Next.js** criado com o comando `create-next-app` e utilizando a **Geist**, uma nova família tipográfica da **Vercel**.  
+O projeto foi estruturado para ser uma base sólida para uma landing page, com **componentes reutilizáveis** e **rotas dinâmicas**.
 
-````bash
-Copiar
-Editar
+---
+
+## 📑 Conteúdo
+1. [Instalar e Rodar o Projeto](#instalar-e-rodar-o-projeto)  
+2. [Estrutura de Arquivos](#estrutura-de-arquivos)  
+3. [Componentes Principais](#componentes-principais)  
+4. [Saiba Mais](#saiba-mais)  
+5. [Fazer Deploy](#fazer-deploy)  
+
+---
+
+## 🚀 Instalar e Rodar o Projeto
+
+### Dependências locais
+Com o repositório clonado, instale as dependências do projeto:
+
+```bash
+npm install
+```
+
+### Rodar o Projeto
+Para rodar o projeto localmente em modo de desenvolvimento, execute:
+
+```bash
 npm run dev
-# ou
-yarn dev
-# ou
-pnpm dev
-# ou
-bun dev
-````
-Abra http://localhost:3000 no seu navegador para ver o resultado.
+```
 
-Você pode começar a editar a página modificando o arquivo app/page.tsx. A página será atualizada automaticamente à medida que você edita o arquivo.
+O servidor de desenvolvimento será iniciado e a aplicação estará disponível em:
 
-Este projeto usa next/font para otimizar e carregar automaticamente a Geist, uma nova família tipográfica da Vercel.
+[http://localhost:3000](http://localhost:3000)
 
-Saiba Mais
-Para saber mais sobre o Next.js, confira os seguintes recursos:
+---
 
-Documentação do Next.js – saiba mais sobre os recursos e a API do Next.js.
+## 📂 Estrutura de Arquivos
 
-Aprenda Next.js – um tutorial interativo de Next.js.
+A organização do projeto segue a convenção do **App Router** do Next.js, com componentes principais definidos na pasta `app/components`.
 
-Você também pode visitar o repositório do Next.js no GitHub – seu feedback e contribuições são bem-vindos!
+- **app/**: Contém as rotas e o layout principal da aplicação.
+  - **page.tsx**: Página inicial da aplicação.
+  - **layout.tsx**: Layout global, que inclui o Header e o Footer.
+- **components/**: Pasta para componentes reutilizáveis, como `header`, `footer`, `hero`, etc.
+- **[pasta]/page.tsx**: Cada pasta dentro de `app` representa uma nova rota, como `app/contatos/page.tsx` para a página de contato.
 
-Fazer deploy na Vercel
-A maneira mais fácil de fazer o deploy da sua aplicação Next.js é usar a Plataforma Vercel, criada pelos desenvolvedores do Next.js.
+---
 
-Confira nossa documentação de deploy com Next.js para mais detalhes.
+## 🧩 Componentes Principais
+
+O projeto utiliza uma arquitetura baseada em **componentes** para facilitar a manutenção e a reutilização. Alguns dos principais:
+
+- **Header**: Barra de navegação superior, com links para as principais seções da landing page.
+- **Footer**: Seção inferior da página, com informações de contato, links sociais e de navegação.
+- **Hero**: Seção de destaque da página inicial, geralmente com um título e uma chamada para ação.
+
+---
+
+## 📚 Saiba Mais
+
+- [📖 Documentação do Next.js](https://nextjs.org/docs) – Saiba mais sobre os recursos e a API do Next.js.  
+- [🎯 Aprenda Next.js](https://nextjs.org/learn) – Tutorial interativo de Next.js.
+
+---
+
+## ☁️ Fazer Deploy
+
+A maneira mais fácil de fazer o deploy da sua aplicação Next.js é usando a **Plataforma Vercel**, criada pelos desenvolvedores do Next.js.
+
+Para mais detalhes, consulte:  
+[📄 Documentação de Deploy com Next.js](https://nextjs.org/docs/deployment)
