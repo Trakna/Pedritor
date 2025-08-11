@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FiCalendar } from "react-icons/fi";
+import { FiCalendar, FiArrowLeft } from "react-icons/fi";
 
 export enum HeaderItems {
   RESOURCES = 'resources',
@@ -14,33 +14,52 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ enabledLinks, showBackButton }) => {
   return (
-    <nav className='w-full px-8 py-4 bg-[#f5f5f5] shadow text-black'> 
-      <div className='flex justify-between items-center'>
-        <div className='flex items-center gap-2 font-bold text-lg'>
-          <FiCalendar className='text-blue-600 text-2xl mr-2' />
+    <nav className="w-full px-8 py-4 bg-[#f5f5f5] shadow text-black">
+      <div className="flex justify-between items-center">
+        <div className="flex items-center gap-2 font-bold text-lg">
+          <FiCalendar className="text-blue-600 text-2xl mr-2" />
           <Link href="/agenda">PsiAgenda</Link>
         </div>
-        
-        <div className='flex item-center gap-4 font-medium text-sm'>
+
+        <div className="flex items-center gap-4 font-medium text-sm">
           {showBackButton ? (
-            <Link href="/" className='flex items-center gap-1 hover:text-gray-600 transition-colors'>
-              {'<'} Voltar ao Início
+            <Link
+              href="/"
+              className="flex items-center gap-1 text-bold hover:text-gray-600 transition-colors"
+            >
+              <FiArrowLeft className="text-base" />
+              Voltar ao Início
             </Link>
           ) : (
-            <ul className='flex gap-4'>
+            <ul className="flex gap-4">
               {enabledLinks.includes(HeaderItems.RESOURCES) && (
                 <li>
-                  <Link href="/resources" className='flex items-center gap-1 hover:text-gray-600 transition-colors'>Recursos</Link>
+                  <Link
+                    href="/resources"
+                    className="flex items-center gap-1 hover:text-gray-600 transition-colors"
+                  >
+                    Recursos
+                  </Link>
                 </li>
               )}
               {enabledLinks.includes(HeaderItems.PRICES) && (
                 <li>
-                  <Link href="/pricing" className='flex items-center gap-1 hover:text-gray-600 transition-colors'>Preços</Link>
+                  <Link
+                    href="/pricing"
+                    className="flex items-center gap-1 hover:text-gray-600 transition-colors"
+                  >
+                    Preços
+                  </Link>
                 </li>
               )}
               {enabledLinks.includes(HeaderItems.CONTACTS) && (
                 <li>
-                  <Link href="/contacts" className='flex items-center gap-1 hover:text-gray-600 transition-colors'>Contatos</Link>
+                  <Link
+                    href="/contacts"
+                    className="flex items-center gap-1 hover:text-gray-600 transition-colors"
+                  >
+                    Contatos
+                  </Link>
                 </li>
               )}
             </ul>
