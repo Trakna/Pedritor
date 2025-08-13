@@ -65,6 +65,10 @@ O projeto utiliza uma arquitetura baseada em **componentes** para facilitar a ma
 
 ---
 
+## Arquivos .env
+
+-**.env.sample**: Arquivo padrão que deve ser configurado ao iniciar o sistema.
+---
 ## ☁️ Fazer Deploy
 
 A maneira mais fácil de fazer o deploy da sua aplicação Next.js é usando a **Plataforma Vercel**, criada pelos desenvolvedores do Next.js.
