@@ -1,11 +1,9 @@
-// src/app/pricing/page.tsx
-
 import { FeatureCard, ButtonStyle } from "../components/feature-card/feature-card";
 import React from "react";
 
 const PricingPage = () => {
   return (
-    <div className="flex justify-center p-8 bg-gray-50 min-h-screen">
+    <div style={{ padding: '20px' }}>
       <FeatureCard
         enabledFeatures={[
           "Até 50 agendamentos/mês",
@@ -24,7 +22,7 @@ const PricingPage = () => {
         ]}
         buttonName="Começar Grátis"
         buttonStyle={ButtonStyle.DEFAULT}
-        // A prop buttonAction foi removida daqui
+        buttonHref="/login"
         cardTitle="Free"
         cardValue={0}
         valueInfo="Grátis para sempre"

@@ -1,10 +1,8 @@
 "use client";
 
 import React from "react";
-// Removendo a importação de ícones para simplificar
-// import { CheckIcon, XMarkIcon } from "@heroicons/react/24/solid";
 
-// Enum para os estilos de botão, agora apenas com nomes simples
+
 export enum ButtonStyle {
   DEFAULT = "default",
   OUTLINE = "outline",
