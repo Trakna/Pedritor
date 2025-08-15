@@ -1,12 +1,8 @@
-// src/pages/pricing.tsx
-
 import { FeatureCard, ButtonStyle } from "../components/feature-card/feature-card";
 import { BooleanTable, Feature } from "../components/boolean-table/boolean-table";
 import React from "react";
 
-// Dados combinados para a tabela de comparação
 const featuresData: Feature[] = [
-  // Funcionalidades do plano 'Free'
   { column: "Free", feature: "Até 50 agendamentos/mês", enabled: true },
   { column: "Free", feature: "1 psicólogo", enabled: true },
   { column: "Free", feature: "Agenda básica", enabled: true },
@@ -19,7 +15,6 @@ const featuresData: Feature[] = [
   { column: "Free", feature: "API de integração", enabled: false },
   { column: "Free", feature: "Suporte prioritário", enabled: false },
 
-  // Funcionalidades do plano 'Pro'
   { column: "Pro", feature: "Até 50 agendamentos/mês", enabled: true },
   { column: "Pro", feature: "1 psicólogo", enabled: true },
   { column: "Pro", feature: "Agenda básica", enabled: true },
@@ -31,13 +26,24 @@ const featuresData: Feature[] = [
   { column: "Pro", feature: "Personalização da marca", enabled: false },
   { column: "Pro", feature: "API de integração", enabled: false },
   { column: "Pro", feature: "Suporte prioritário", enabled: false },
+  
+  { column: "Premium", feature: "Até 50 agendamentos/mês", enabled: true },
+  { column: "Premium", feature: "1 psicólogo", enabled: true },
+  { column: "Premium", feature: "Agenda básica", enabled: true },
+  { column: "Premium", feature: "Lembretes por email", enabled: true },
+  { column: "Premium", feature: "Suporte por email", enabled: true },
+  { column: "Premium", feature: "Relatórios básicos", enabled: true },
+  { column: "Premium", feature: "Lembretes por SMS", enabled: true },
+  { column: "Premium", feature: "Integração com calendário", enabled: true },
+  { column: "Premium", feature: "Personalização da marca", enabled: true },
+  { column: "Premium", feature: "API de integração", enabled: true },
+  { column: "Premium", feature: "Suporte prioritário", enabled: true },
 ];
 
 const PricingPage = () => {
   return (
     <div className="min-h-screen p-8 flex flex-col items-center gap-8 bg-gray-50">
       <div className="flex flex-col md:flex-row md:items-start md:justify-center gap-8">
-        {/* Cartão do Plano Gratuito */}
         <FeatureCard
           enabledFeatures={[
             "Até 50 agendamentos/mês",
@@ -63,7 +69,6 @@ const PricingPage = () => {
           cardSubtitle="Perfeito para psicólogos iniciantes"
         />
       
-        {/* Cartão do Plano Pro */}
         <FeatureCard
           highlightBorders={true}
           enabledFeatures={[
@@ -95,7 +100,6 @@ const PricingPage = () => {
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
           Compare nossos planos
         </h2>
-        {/* Renderização da tabela de comparação */}
         <BooleanTable features={featuresData} highlightedColumn="Pro" />
       </div>
     </div>

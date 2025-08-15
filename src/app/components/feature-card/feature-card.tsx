@@ -1,5 +1,3 @@
-// src/components/feature-card/feature-card.tsx
-
 "use client";
 
 import React from "react";
@@ -37,10 +35,8 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
   cardSubtitle,
   buttonHref,
 }) => {
-  // Define o estilo padrão como o azul (HIGHLIGHT).
   let buttonStyleClasses = "bg-blue-600 text-white hover:bg-blue-700";
 
-  // Se o estilo for DEFAULT, sobrescreve com as classes cinzas.
   if (buttonStyle === ButtonStyle.DEFAULT) {
     buttonStyleClasses = "bg-gray-200 text-gray-800 hover:bg-gray-300";
   }

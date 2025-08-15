@@ -1,9 +1,7 @@
-// src/components/boolean-table/boolean-table.tsx
-
 "use client";
 
 import React from "react";
-import { FaCheck, FaTimes } from "react-icons/fa";
+import { FaCheck } from "react-icons/fa";
 
 export type Feature = {
   column: string;
@@ -20,7 +18,6 @@ export const BooleanTable: React.FC<BooleanTableProps> = ({
   features,
   highlightedColumn,
 }) => {
-  // 1. Validação dos Dados
   if (!features || features.length === 0) {
     return (
       <div className="p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg text-center font-semibold">
@@ -55,15 +52,13 @@ export const BooleanTable: React.FC<BooleanTableProps> = ({
     }
   }
 
-  // 2. Renderização da Tabela
   return (
     <div className="overflow-x-auto relative shadow-md sm:rounded-lg">
       <table className="w-full text-sm text-left text-gray-500">
-        
         <thead className="text-xs text-gray-700 uppercase bg-gray-50">
           <tr>
             <th scope="col" className="py-3 px-6">
-              Funcionalidades
+              Recursos
             </th>
             {columns.map((columnName) => (
               <th
@@ -83,7 +78,7 @@ export const BooleanTable: React.FC<BooleanTableProps> = ({
           {featuresList.map((featureName, index) => (
             <tr
               key={index}
-              className="bg-white border-b hover:bg-gray-50 transition-colors duration-200"
+              className="bg-white border-b hover:bg-gray-100 transition-colors duration-200"
             >
               <td className="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">
                 {featureName}
@@ -104,7 +99,7 @@ export const BooleanTable: React.FC<BooleanTableProps> = ({
                     {feature?.enabled ? (
                       <FaCheck className="text-green-500 mx-auto" />
                     ) : (
-                      <FaTimes className="text-red-500 mx-auto" />
+                      <span className="text-gray-400">x</span>
                     )}
                   </td>
                 );
