@@ -21,6 +21,7 @@ Com o repositório clonado, instale as dependências do projeto:
 
 ```bash
 npm install
+npm install react-icons@latest
 ```
 
 ### Rodar o Projeto
