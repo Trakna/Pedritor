@@ -34,7 +34,6 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
   cardSubtitle,
   buttonHref,
 }) => {
-
   return (
     <div
       className={`relative rounded-xl shadow-md w-full sm:w-80 text-center bg-white border ${
@@ -49,7 +48,9 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
 
       <h3 className="text-lg text-black font-semibold mb-1">{cardTitle}</h3>
       <div className="mb-1">
-        <span className="text-4xl font-bold text-black">R$ {cardValue}</span>
+        <span className={`text-4xl font-bold ${highlightBorders ? "text-black" : "text-black"}`}>
+          R$ {cardValue}
+        </span>
         {monthly && <span className="text-sm font-medium text-gray-500"> /por mês</span>}
       </div>
       {valueInfo && <p className="text-xs text-gray-500 mb-1">{valueInfo}</p>}
@@ -94,11 +95,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
 
       <button
         onClick={() => (window.location.href = buttonHref)}
-        className={`w-full py-3 rounded-lg text-base font-semibold transition-colors duration-200 ${
-          buttonStyle === ButtonStyle.DEFAULT
-            ? "bg-blue-600 text-white hover:bg-blue-700"
-            : "bg-white text-blue-600 border border-blue-600 hover:bg-blue-50"
-        }`}
+        className="w-full py-3 rounded-lg text-base font-semibold transition-colors duration-200 bg-blue-600 text-white hover:bg-blue-700"
       >
         {buttonName}
       </button>
