@@ -1,6 +1,9 @@
+// src/components/feature-card/feature-card.tsx
+
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
 export enum ButtonStyle {
   DEFAULT = "default",
@@ -34,6 +37,14 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
   cardSubtitle,
   buttonHref,
 }) => {
+  // Define o estilo padrão como o azul (HIGHLIGHT).
+  let buttonStyleClasses = "bg-blue-600 text-white hover:bg-blue-700";
+
+  // Se o estilo for DEFAULT, sobrescreve com as classes cinzas.
+  if (buttonStyle === ButtonStyle.DEFAULT) {
+    buttonStyleClasses = "bg-gray-200 text-gray-800 hover:bg-gray-300";
+  }
+
   return (
     <div
       className={`relative rounded-xl shadow-md w-full sm:w-80 text-center bg-white border ${
@@ -53,7 +64,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
         </span>
         {monthly && <span className="text-sm font-medium text-gray-500"> /por mês</span>}
       </div>
-      {valueInfo && <p className="text-xs text-gray-500 mb-1">{valueInfo}</p>}
+      {valueInfo && <p className="text-xs text-gray-500 mb-5">{valueInfo}</p>}
       <p className="text-sm text-gray-500 mb-5">{cardSubtitle}</p>
 
       <ul className="text-left mb-6 space-y-3">
@@ -93,12 +104,13 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
         ))}
       </ul>
 
-      <button
-        onClick={() => (window.location.href = buttonHref)}
-        className="w-full py-3 rounded-lg text-base font-semibold transition-colors duration-200 bg-blue-600 text-white hover:bg-blue-700"
-      >
-        {buttonName}
-      </button>
+      <Link href={buttonHref} passHref>
+        <button
+          className={`w-full py-3 rounded-lg text-base font-semibold transition-colors duration-200 ${buttonStyleClasses}`}
+        >
+          {buttonName}
+        </button>
+      </Link>
     </div>
   );
 };
