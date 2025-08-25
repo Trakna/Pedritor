@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
-// Importe o seu novo componente
 import { DynamicHeader } from "./components/dynamic-header/dynamic-header";
 import { Footer } from "./components/footer/Footer";
 import "./globals.css";
