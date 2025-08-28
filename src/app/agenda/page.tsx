@@ -9,6 +9,7 @@ export default function Agenda() {
       <p className="text-center text-lg text-black text-bold">
         Fique atento às atualizações!
         Novidades em breve
+        Fique atento, sempre atualizando
         
       </p>
     </section>
