@@ -11,6 +11,7 @@ export default function Agenda() {
         Novidades em breve
         Fique atento, sempre atualizando
         novas versões sempre que possível!!!
+        Sempre evoluindo 
         
       </p>
     </section>
