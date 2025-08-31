@@ -12,6 +12,7 @@ export default function Agenda() {
         Fique atento, sempre atualizando
         novas versões sempre que possível!!!
         Sempre evoluindo 
+        Novos recursos serão adicionados, testes sempre ocorrendo 
         
       </p>
     </section>
