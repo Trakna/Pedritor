@@ -8,13 +8,6 @@ export default function Agenda() {
       </p>
       <p className="text-center text-lg text-black text-bold">
         Fique atento às atualizações!
-        Novidades em breve
-        Fique atento, sempre atualizando
-        novas versões sempre que possível!!!
-        Sempre evoluindo 
-        Novos recursos serão adicionados, testes sempre ocorrendo 
-        teste novo 
-        
       </p>
     </section>
       </>
