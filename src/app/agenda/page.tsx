@@ -8,8 +8,6 @@ export default function Agenda() {
       </p>
       <p className="text-center text-lg text-black text-bold">
         Fique atento às atualizações!
-        teste
-        
       </p>
     </section>
       </>
