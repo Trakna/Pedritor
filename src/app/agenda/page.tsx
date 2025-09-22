@@ -8,7 +8,8 @@ export default function Agenda() {
       </p>
       <p className="text-center text-lg text-black text-bold">
         Fique atento às atualizações!
-        teste
+        voltando dia 22/09/2025
+
       </p>
     </section>
       </>
