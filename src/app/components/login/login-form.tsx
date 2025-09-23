@@ -52,7 +52,7 @@ export default function LoginForm() {
         <hr className="my-4" />
         <div className="text-center text-sm text-gray-600">
           Você é administrador? <br />
-          <a href="#" className="text-blue-600 font-semibold hover:underline">
+          <a href="/admin/login" className="text-blue-600 font-semibold hover:underline">
             Acessar painel administrativo
           </a>
         </div>

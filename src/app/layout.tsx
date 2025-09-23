@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+// Remova: import { usePathname } from "next/navigation";
 
 import { DynamicHeader } from "./components/dynamic-header/dynamic-header";
 import { Footer } from "./components/footer/Footer";
