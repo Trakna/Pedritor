@@ -8,13 +8,17 @@ export function UserRegisterForm() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-b from-[#f5f8fc] to-white">
       <div className="bg-white rounded-xl shadow p-8 w-full max-w-md">
-        <h2 className="text-2xl font-bold text-center mb-2 text-black">Criar nova conta</h2>
+        <h2 className="text-2xl font-bold text-center mb-2 text-black">
+          Criar nova conta
+        </h2>
         <p className="text-center text-gray-500 mb-6">
           Comece a organizar sua prática psicológica
         </p>
         <form className="space-y-4">
           <div>
-            <label className="block font-semibold mb-1 text-black">Nome completo</label>
+            <label className="block font-semibold mb-1 text-black">
+              Nome completo
+            </label>
             <div className="relative">
               <input
                 type="text"
@@ -72,13 +76,19 @@ export function UserRegisterForm() {
                 onClick={() => setShowPassword((v) => !v)}
                 tabIndex={-1}
               >
-                <i className={`fa ${showPassword ? "fa-eye-slash" : "fa-eye"}`} />
+                <i
+                  className={`fa ${
+                    showPassword ? "fa-eye-slash" : "fa-eye"
+                  }`}
+                />
               </button>
             </div>
           </div>
 
           <div>
-            <label className="block font-semibold mb-1 text-black">Confirmar senha</label>
+            <label className="block font-semibold mb-1 text-black">
+              Confirmar senha
+            </label>
             <input
               type="password"
               placeholder="Confirme sua senha"
@@ -93,6 +103,22 @@ export function UserRegisterForm() {
             Criar Conta
           </button>
         </form>
+
+        {/* 🔹 Rodapé mantido */}
+        <div className="text-center mt-4 text-gray-600">
+          Já tem uma conta?{" "}
+          <a href="/login" className="text-blue-600 font-semibold">
+            Fazer login
+          </a>
+        </div>
+        <hr className="my-4" />
+        <div className="text-center">
+          <span className="text-gray-600">Você é administrador?</span>
+          <br />
+          <a href="/admin" className="text-blue-600 font-semibold">
+            Acessar painel administrativo
+          </a>
+        </div>
       </div>
     </div>
   );
