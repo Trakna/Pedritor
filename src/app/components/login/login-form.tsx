@@ -45,7 +45,7 @@ export default function LoginForm() {
         </div>
         <div className="text-center mt-2 text-sm text-gray-600">
           Não tem uma conta?{" "}
-          <a href="#" className="text-blue-600 hover:underline">
+          <a href="/register" className="text-blue-600 hover:underline">
             Criar conta
           </a>
         </div>
