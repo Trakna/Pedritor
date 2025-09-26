@@ -123,4 +123,4 @@ export function UserRegisterForm() {
     </div>
   );
 }
-/*Só um comentário para lembrar das tasks pedritor*/ 
+/*Só um comentário para lembrar das tasks pedritor, mais um */ 
